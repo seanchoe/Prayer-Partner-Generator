@@ -1,5 +1,11 @@
 body {
   text-align: center;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+}
+
+input[type="submit"] {
+  display: block;
+  margin: auto;
 }
 
 .input-textarea {

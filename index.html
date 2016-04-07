@@ -12,8 +12,10 @@
 
 <body ng-controller="GeneratorCtrl">
   <h1>Prayer Partner Generator</h1>
-  <p>Enter names, separated by line.</p>
-  <textarea class="input-textarea">
+  <p>{{ beforeDesc }}</p>
+  <textarea class="input-textarea" ng-model="list">
   </textarea>
+  <input type="submit" value="Generate" ng-click="generate()" />
+  <p>{{ afterDesc }}</p>
 </body>
 </html>
