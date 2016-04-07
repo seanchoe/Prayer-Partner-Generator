@@ -5,6 +5,7 @@ function($scope, $location) {
   $scope.list = "Natalie\nDave\nLisa\nMatt\nSarah\nJon\nCandice\nJulio\nWonji\nSean";
   $scope.beforeDesc = "Enter names, separated by line.";
   $scope.afterDesc = "";
+  $scope.showGenerateButton = true;
   $scope.generate = function() {
     var nameArr = $scope.list.split("\n");
     var matchArr = [];
@@ -90,6 +91,7 @@ function($scope, $location) {
 
     $scope.afterDesc = "Done! Copy the text and save it somewhere.";
     $scope.list = lastStr;
+    $scope.showGenerateButton = false;
   }
 }]);
 
