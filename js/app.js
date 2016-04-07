@@ -48,7 +48,7 @@ function($scope, $location) {
 
           var first = nameArr[numArr[0]];
           var second = nameArr[numArr[1]];
-          weekText += (first + " with " + second);
+          weekText += (first + " and " + second);
           weekText += "\n";
           eachWeekArray.push(str);
         }
@@ -61,7 +61,7 @@ function($scope, $location) {
         if (leftArr.length == 2) {
           var first2 = nameArr[leftArr[0]];
           var second2 = nameArr[leftArr[1]];
-          weekText += (first2 + " with " + second2);
+          weekText += (first2 + " and " + second2);
           weekText += "\n";
           leftArr = [];
         }
